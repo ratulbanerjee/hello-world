@@ -8,7 +8,7 @@ pip install django
 pip install boto3
 pip install requests
 pwd
-BUILD_ID=dontKillMe nohup python manage.py runserver ec2-34-215-136-238.us-west-2.compute.amazonaws.com &
+nohup python manage.py runserver ec2-34-215-136-238.us-west-2.compute.amazonaws.com:8000 > /dev/null 2>&1 &
 
 echo "dependencies are installed"
 
