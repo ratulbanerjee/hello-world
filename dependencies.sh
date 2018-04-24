@@ -1,8 +1,6 @@
 #!/bin/bash
 set +x
 
-env.WORKSPACE = pwd()
-env.PATH="${env.WORKSPACE}/venv/bin:/usr/bin:${env.PATH}"
 virtualenv venv -p python3.6
 source venv/bin/activate
 pip install awscli
