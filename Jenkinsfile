@@ -7,8 +7,18 @@ node {
            
 
         stage 'Installing dependencies'
-            sh './dependencies.sh'
+        
+		env.WORKSPACE = pwd()
+		
 
+		sh './dependencies.sh'
+
+
+	stage 'Running Server'
+
+		sh "${env.WORKSPACE}/venv/bin/python3.6 manage.py runserver
+	
+		
 	    
 	          
 
