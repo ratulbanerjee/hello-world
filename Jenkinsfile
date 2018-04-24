@@ -13,14 +13,9 @@ node {
 
 		sh './dependencies.sh'
 
-
-	stage 'Running Server'
-
-		sh "${env.WORKSPACE}/venv/bin/python3.6 manage.py runserver
-	
 		
-	    
-	          
+	
+
 
 
         
